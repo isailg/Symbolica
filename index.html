@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title> Symbolic Learning Algorithms | isailopgar </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1>Symbolic Learning Algorithms</h1>
+  <h5>by Isai Lopez-Garcia
+  </h5>
+
+
+  <section style="margin-bottom: 0em; background-color: rgba(255, 255, 255, 0.05); padding: 0.6em; border-radius: 10px;">
+    <h2 style="color: #ddd;">Visualizador de algoritmos de aprendizaje simbólico automático</h2>
+    
+  </section>
+  
+  <form id="rectForm">
+    <h3 style="color: #666;">1. Genera el rectángulo al azar:</h3>
+    <button type="submit"> Generar rectángulo</button>
+  </form>
+  
+    <form id="nForm">
+      <h3 style="color: #666;">2. Ingresa número de puntos aleatorios:</h3>
+      <label><strong>n:</strong></label>
+      <input type="text" id="states" size="10" value="100" required />
+      <button type="submit"> Graficar puntos</button>
+    </form>
+    
+    <div class="control-row algos" style="margin-bottom: 3em;">
+      <h3 style="color: #666;">3. Escoge algoritmo de aprendizaje simbólico:</h3>
+      <label>
+        <input type="checkbox" id="algCentroide" name="algo" value="centroide" checked />
+        Algoritmo 1 (Centroide)
+      </label>
+      
+      <button id="algoBtn">Ejecutar algoritmo</button>
+    </div>
+
+    
+
+    
+    <svg id="canvas" width="400" height="400"></svg>
+    <section style="padding-left:0em; margin-top: 0em; background-color: rgba(255, 255, 255, 0.05); padding: 0.6em; border-radius: 10px;">
+    </section>
+    
+    
+    <form id="vForm" style="margin-top: 0em;">
+      <h3 style="color: #666;">4. Evaluación del algoritmo:</h3>
+      <button type="submit"> Evaluar</button>
+    </form>
+    
+    <section id="results" style="margin-bottom: 2em; background-color: rgba(255, 255, 255, 0.05); padding: 0.6em; border-radius: 10px;">
+    
+    </section>
+    
+    
+
+
+    
+
+        
+        
+<section style="padding-bottom: 0em; background-color: rgba(255, 255, 255, 0.05); padding-top: 6em; ">
+            <ul style="color: #ccc; list-style: none; line-height: 1.6; padding-left: 0em;">
+            <li>Center for Research in Computing</li>
+            <li> National Polytechnic Institute</li>
+            <li> Mexico, 2025 </li>
+                
+                
+            </ul>
+</section>
+        
+        
+        
+        
+        <script src="sla.js"></script>
+        <footer style="margin-top: 30px; text-align: center; font-size: 14px; color: #777;">
+          Isaí López-García
+        </footer>
+</body>
+</html>
